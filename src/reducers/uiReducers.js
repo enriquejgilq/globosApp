@@ -15,7 +15,17 @@ export const uiReducers = (state = initialState, action) => {
     case types.uiRemoveError:
       return {
         ...state,
-        msgError: null
+        msgError: null,
+      };
+    case types.uiStartLoading:
+      return {
+        ...state,
+        loading: true,
+      };
+    case types.uiFinishLoading:
+      return {
+        ...state,
+        loading: false,
       };
 
     default:

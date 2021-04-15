@@ -11,13 +11,16 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import RecoverPassword from "./RecoverPassword";
-
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux';
-import { login,startGoogleLogin,startLoginEmailPassword } from '../../actions/auth'
-import googleimg  from '../../assets/googleimg.jpg'
+import { useDispatch, useSelector } from "react-redux";
+import {
+  login,
+  startGoogleLogin,
+  startLoginEmailPassword,startLogin
+} from "../../actions/auth";
+import googleimg from "../../assets/googleimg.jpg";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
- 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -56,33 +59,58 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: "100%", // Fix IE 11 issue.
+    width: "100%",
     marginTop: theme.spacing(1),
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  loading: {
+    margin: theme.spacing(1, 1),
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  register: {
+    margin: theme.spacing(1, 5),
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
 }));
 
 export default function Login() {
-
   const dispatch = useDispatch();
+  const { loading } = useSelector((state) => state.ui);
   const classes = useStyles();
 
-   const email = useRef();
-   const password = useRef();
+  const email = useRef();
+  const password = useRef();
+
+  const loginSystem = (e) => {
+    e.preventDefault();
+    const data = {
+      email: email.current.value,
+      password: password.current.value,
+    };
+    dispatch(startLoginEmailPassword(data.email, data.password));
+  };
+
+  const loginSystemBack = (e) => {
+    e.preventDefault();
+    const data = {
+      email: email.current.value,
+      password: password.current.value,
+    };
+    dispatch(startLogin(data.email, data.password));
+   
+  };
 
 
-   const loginSystem=(e)=>{
-     e.preventDefault()
-    dispatch(startLoginEmailPassword(email, password));
-    console.log(login()) 
-   }
 
-   const handleGoogleLogin =()=>{
-     dispatch( startGoogleLogin())
-
-   }
+  const handleGoogleLogin = () => {
+    dispatch(startGoogleLogin());
+  };
 
   return (
     <Grid container component="main" className={classes.root}>
@@ -107,6 +135,7 @@ export default function Login() {
               autoFocus
               inputRef={email}
             />
+
             <TextField
               variant="outlined"
               margin="normal"
@@ -121,33 +150,44 @@ export default function Login() {
             />
 
             <Button
-              type="submit"
+              type="button"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
-              onClick={loginSystem}
+              onClick={loginSystemBack}
+              disabled={loading}
             >
               Iniciar sesion
             </Button>
+
             <Button
               type="button"
               fullWidth
               variant="contained"
               color="primary"
               onClick={handleGoogleLogin}
-                       >
+            >
               Iniciar sesion con google
             </Button>
-
-
-        
-            <Grid container>
-              <Grid item xs>
-                <Link to="/recuperar">Olvido de contraseña</Link>
+            {loading && (
+              <Grid className={classes.loading}>
+                <CircularProgress />
               </Grid>
-              <Grid item>
-              <Link to="/registro">¿No tienes una cuenta?, registrate aqui</Link>
+            )}
+
+            <Grid className={classes.register}>
+              <Grid item xs={12}>
+                <Typography>
+                  <Link to="/recuperar">Olvido de contraseña</Link>
+                </Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography>
+                  <Link to="/registro">
+                    ¿No tienes una cuenta?, registrate aqui
+                  </Link>
+                </Typography>
               </Grid>
             </Grid>
             <Box mt={5}>

@@ -8,15 +8,24 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
 import validator from "validator";
-import { useDispatch } from 'react-redux';
-import { setError } from '../../actions/ui'
+import { useDispatch, useSelector } from "react-redux";
+import { removeError, setError } from "../../actions/ui";
+import ModalAlert from "../../components/ModalAlert";
+import { startRegisterwithEmailPassword, startRegister } from "../../actions/auth";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import Swal from "sweetalert2";
+
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://enriquejgilq.github.io/">
+      <Link
+        color="inherit"
+        target="_blank"
+        to="https://enriquejgilq.github.io/"
+      >
         Realizado por Enrique Gil, en colaboracion con Cristian Monje
       </Link>{" "}
       {new Date().getFullYear()}
@@ -59,7 +68,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Register() {
-  const  dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const { msgError } = useSelector((state) => state.ui);
+
   const classes = useStyles();
   const name = useRef();
   const email = useRef();
@@ -70,16 +81,21 @@ export default function Register() {
   const [phoneError, setphoneError] = useState("");
   const [passwordError, setpasswordError] = useState("");
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
   const saveUser = () => {
     const data = {
-      name: name.current.value,
       email: email.current.value,
-      phone: phone.current.value,
       password: password.current.value,
+      name: name.current.value,
+      phone: phone.current.value,
     };
     if (data.name === "") {
-      dispatch( setError)
       setnameError("El nombre no puede estar vacio");
+      dispatch(setError("El nombre no puede estar vacio"));
       setemailError("");
       setpasswordError("");
       setphoneError("");
@@ -88,6 +104,7 @@ export default function Register() {
       console.log("email vacio");
       setnameError("");
       setemailError("El Correo electronico no es valido");
+      dispatch(setError("El Correo electronico no es valido"));
       setpasswordError("");
       setphoneError("");
     } else if (data.phone === "") {
@@ -95,6 +112,7 @@ export default function Register() {
       setnameError("");
       setemailError("");
       setphoneError("El telefono no puede estar vacio");
+      dispatch(setError("El telefono no puede estar vacio"));
       setpasswordError("");
     } else if (data.password === "") {
       console.log("contraseña vacia");
@@ -102,23 +120,40 @@ export default function Register() {
       setemailError("");
       setphoneError("");
       setpasswordError("La contraseña no puede estar vacia");
+      dispatch(setError("La contraseña no puede estar vacia"));
     } else if (data.password < 8) {
       setnameError(" ");
       setemailError("");
       setpasswordError("");
       setpasswordError("La contraseña tiene que tener más de 8 digitos");
+      dispatch(setError("La contraseña tiene que tener más de 8 digitos"));
     } else {
+      console.log(data);
+
+     /* dispatch(
+        startRegisterwithEmailPassword(
+          data.email,
+          data.password,
+          data.name,
+          data.phone
+        )
+      );
+      dispatch(removeError());
       console.log("perfecto");
+*/ 
+dispatch(startRegister(
+  data.email,
+  data.password,
+  data.name,
+  data.phone
+  ))
+
       console.log(data);
       setnameError(" ");
       setemailError("");
       setpasswordError("");
       setpasswordError("");
     }
-  };
-
-  const formValid = () => {
-    return true;
   };
 
   return (
@@ -198,10 +233,15 @@ export default function Register() {
             >
               Registro de usuario
             </Button>
+            <Typography>
+              <Link to="/">Atrás</Link>
+            </Typography>
 
             <Box mt={5}>
               <Copyright />
             </Box>
+            {/*editar mensaje de error modal */}
+            <ModalAlert open={open} />
           </form>
         </div>
       </Grid>

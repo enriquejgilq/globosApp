@@ -4,7 +4,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
@@ -23,10 +23,17 @@ import ClassIcon from "@material-ui/icons/Class";
 import ArtTrackIcon from "@material-ui/icons/ArtTrack";
 import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import LocalAtmIcon from '@material-ui/icons/LocalAtm';
-import FileCopyIcon from '@material-ui/icons/FileCopy';
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import LocalAtmIcon from "@material-ui/icons/LocalAtm";
+import FileCopyIcon from "@material-ui/icons/FileCopy";
 import AdapterLink from "../../AdapterLink";
+import { useDispatch } from "react-redux";
+import { startLogout, LogoutSystem } from "../../actions/auth";
+import Avatar from "@material-ui/core/Avatar";
+import imageA from "../../assets/GlobosApp-_1_.svg";
+
+import Paper from "@material-ui/core/Paper";
+import Box from "@material-ui/core/Box";
 
 const drawerWidth = 240;
 
@@ -91,6 +98,7 @@ export default function Dashboard() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const dispatch = useDispatch();
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -100,6 +108,10 @@ export default function Dashboard() {
     setOpen(false);
   };
 
+  const handleLogout = () => {
+    dispatch(startLogout());
+    dispatch(LogoutSystem());
+  };
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -119,9 +131,6 @@ export default function Dashboard() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            GlobosApp
-          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -134,6 +143,11 @@ export default function Dashboard() {
         }}
       >
         <div className={classes.drawerHeader}>
+          <Typography variant="h5">
+            <Box fontWeight="fontWeightBold" m={1}>
+              GlobosApp
+            </Box>
+          </Typography>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -173,19 +187,19 @@ export default function Dashboard() {
         </List>
         <Divider />
         <List>
-        <ListItem button component={AdapterLink} to="/pedidos">
+          <ListItem button component={AdapterLink} to="/pedidos">
             <ListItemIcon>
               <FileCopyIcon />
             </ListItemIcon>
             <ListItemText primary="Pedidos" />
           </ListItem>
-        <ListItem button component={AdapterLink} to="/ventas">
+          <ListItem button component={AdapterLink} to="/ventas">
             <ListItemIcon>
               <LocalAtmIcon />
             </ListItemIcon>
             <ListItemText primary="Estado De ventas" />
           </ListItem>
-        <ListItem button component={AdapterLink} to="/clientes">
+          <ListItem button component={AdapterLink} to="/clientes">
             <ListItemIcon>
               <SupervisorAccountIcon />
             </ListItemIcon>
@@ -195,9 +209,8 @@ export default function Dashboard() {
             <ListItemIcon>
               <ExitToAppIcon />
             </ListItemIcon>
-            <ListItemText primary="Salir" />
+            <ListItemText primary="Salir" onClick={handleLogout} />
           </ListItem>
-
         </List>
       </Drawer>
       <main
@@ -206,13 +219,6 @@ export default function Dashboard() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Typography variant="h1" component="h2" gutterBottom>
-          Bienvenidos!
-        </Typography>
-        <Typography paragraph>
-          aqui va una tabla con info de deudores y cantidad de globos
-          disponibles :D
-        </Typography>
       </main>
     </div>
   );

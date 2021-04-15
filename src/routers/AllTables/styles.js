@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     content: {
         flexGrow: 1,
-        height: '100vh',
+        height: '1000vh',
         overflow: 'auto',
     },
     container: {
@@ -49,8 +49,5 @@ export default makeStyles((theme) => ({
     },buttonSave :{
         justifyContent: 'center',
         marginLeft: 'end'
-
-
-
     }
 }));
