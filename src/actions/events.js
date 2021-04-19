@@ -42,3 +42,56 @@ const categoryLoaded = (categories) => ({
   type: types.categoryLoaded,
   payload: categories,
 });
+
+export const categoryUpdate = (event) => {
+  return async (dispatch) => {
+    try {
+      const resp = await fetchConToken(`events/${event._id}`, event, "PUT");
+      const body = await resp.json();
+      if (body.ok) {
+        Swal.fire(
+          '',
+          'Categoria editada con éxito',
+          'success'
+        )
+        dispatch(categoryUp(event));
+      } else {
+        Swal.fire("Error", body.msg, "error");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};
+
+const categoryUp = (event) => ({
+  type: types.categoryUpdate,
+  payload: event,
+});
+
+export const categoryDelete = (event) => {
+  return async (dispatch) => {
+    try {
+      const resp = await fetchConToken(`events/${event._id}`, {}, "DELETE");
+      const body = await resp.json();
+      if (body.ok) {
+        try {
+          const resp = await fetchConToken("events");
+          const body = await resp.json();
+    
+          const categories = body.eventos;
+          dispatch(categoryLoaded(categories));
+        } catch (error) {
+          console.log(error);
+        }
+      } else {
+        Swal.fire("Error", body.msg, "error");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};
+const categoryDel = () => ({
+  type: types.categoryDelete,
+});

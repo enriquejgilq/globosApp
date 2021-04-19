@@ -28,6 +28,8 @@ export const types = {
     eventStartAddNew: '[event] Start Event ',
 
     categoryLoaded: '[event] Events loaded',
+    categoryUpdate: '[event] categories update',
+    categoryDelete : '[event] categories delete'
 
 
 

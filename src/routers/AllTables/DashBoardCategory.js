@@ -18,7 +18,7 @@ import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import MaterialTable from "material-table";
 import useStyles from "./styles";
-import { eventStartAddNew, eventStartLoading  } from "../../actions/events";
+import { eventStartAddNew, eventStartLoading, categoryUpdate, categoryDelete  } from "../../actions/events";
 import { useDispatch, useSelector } from "react-redux";
 
 const tableIcons = {
@@ -56,11 +56,10 @@ export function DashBoardCategory() {
     dispatch( eventStartLoading() );
 }, [ dispatch ])
   const [columns, setColumns] = useState([
-    { title: "Id de categoria", field: "_id"},
+    { title: "Id de categoria", field: "_id", editable: 'never'},
     { title: "Categoria", field: "category" },
   ]);
-  const [data, setData] = useState([]);
-
+ 
   return (
     <Grid container xs={6} md={6}>
       <Grid xs={12} md={12}>
@@ -73,29 +72,23 @@ export function DashBoardCategory() {
             onRowAdd: (newData) =>
               new Promise((resolve, reject) => {
                 setTimeout(() => {
-                  setData([...data, newData]);
                   dispatch(eventStartAddNew(newData));
+                  dispatch( eventStartLoading() );
                   resolve();
                 }, 1000);
               }),
             onRowUpdate: (newData, oldData) =>
               new Promise((resolve, reject) => {
                 setTimeout(() => {
-                  const dataUpdate = [...data];
-                  const index = oldData.tableData.id;
-                  dataUpdate[index] = newData;
-                  setData([...dataUpdate]);
-
+                  dispatch(categoryUpdate(newData));
                   resolve();
                 }, 1000);
               }),
             onRowDelete: (oldData) =>
               new Promise((resolve, reject) => {
                 setTimeout(() => {
-                  const dataDelete = [...data];
-                  const index = oldData.tableData.id;
-                  dataDelete.splice(index, 1);
-                  setData([...dataDelete]);
+                dispatch(categoryDelete(oldData))
+                dispatch( eventStartLoading() );
 
                   resolve();
                 }, 1000);
@@ -105,10 +98,36 @@ export function DashBoardCategory() {
             actionsColumnIndex: -1,
           }}
           localization={{
-            header: {
-              actions: "Acciones",
+          pagination: {
+            labelDisplayedRows: "{from}-{to} de {count}",
+            labelRowsSelect: "filas",
+            firstTooltip: "Primera Página",
+            previousTooltip: "Página anterior",
+            nextTooltip: "Próxima página",
+            lastTooltip: "Última página ",
+          },
+          toolbar: {
+            nRowsSelected: "{0} fila(s) seleccionadas",
+            searchPlaceholder: "Buscar",
+          },
+          header: {
+            actions: "Acciones",
+          },
+          body: {
+            emptyDataSourceMessage: "No hay información para mostrar",
+            filterRow: {
+              filterTooltip: "Filtrar",
             },
-          }}
+            editRow: {
+              cancelTooltip: "Cancelar",
+              saveTooltip: "Guardar",
+              deleteText: '¿Estás seguro de eliminar esta categoria?'
+            },
+            addTooltip: "Agregar Categorias",
+            editTooltip: "Editar Categorias",
+            deleteTooltip: "Eliminar Categorias",
+          },
+        }}
         />
       </Grid>
     </Grid>
