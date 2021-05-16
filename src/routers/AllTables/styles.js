@@ -21,7 +21,8 @@ export default makeStyles((theme) => ({
         marginLeft: theme.spacing(2)
     },
     form: {
-        marginTop: theme.spacing(2)
+        display: 'grid',
+        gridGap: theme.spacing(0.5),
     },
     submit: {
         width: 200
@@ -47,7 +48,35 @@ export default makeStyles((theme) => ({
         left: -6,
         zIndex: 1,
     },buttonSave :{
-        justifyContent: 'center',
-        marginLeft: 'end'
-    }
+        marginTop:'2%'
+
+        },
+   
+    btn:{
+        textAlign: 'center'
+      },
+      button: {
+        margin: theme.spacing(1),
+        whiteSpace:'nowrap', 
+        width:'50%'
+
+
+      },
+      txt:{
+        fontSize:'90%',
+        whiteSpace:'nowrap', 
+        fontFamily: 'arial',
+        fontWeight: 'bold'
+      },
+      text:{
+        whiteSpace:'nowrap', 
+      },
+      cnt:{
+        display: 'flex',
+
+      }
+    
+
+
+     
 }));

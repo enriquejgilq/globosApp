@@ -1,8 +1,8 @@
-import { types } from "../types/types";
-import { firebase, googleAuthProvider } from "../firebase/firebaseConfig";
+import { types } from "../types/types"
+import { firebase, googleAuthProvider } from "../../firebase/firebaseConfig";
 import { finishLoading, startLoading, startLoginBack } from "./ui";
 import Swal from "sweetalert2";
-import { fetchSinToken, fetchConToken } from "../helpers/fetch";
+import { fetchSinToken, fetchConToken } from "../../helpers/fetch";
 //bdFirebase
 export const startLoginEmailPassword = (email, password) => {
   return (dispatch) => {

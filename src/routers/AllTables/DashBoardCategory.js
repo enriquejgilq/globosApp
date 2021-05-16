@@ -18,7 +18,7 @@ import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import MaterialTable from "material-table";
 import useStyles from "./styles";
-import { eventStartAddNew, eventStartLoading, categoryUpdate, categoryDelete  } from "../../actions/events";
+import { eventStartAddNew, eventStartLoading, categoryUpdate, categoryDelete  } from "../../redux/actions/events";
 import { useDispatch, useSelector } from "react-redux";
 
 const tableIcons = {

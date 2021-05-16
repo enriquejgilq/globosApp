@@ -3,6 +3,7 @@ import { authReducer } from '../reducers/authReducer'
 import {uiReducers} from '../reducers/uiReducers'
 import {authReducerBack} from '../reducers/authReducerBack'
 import {categoryReducer} from '../reducers/categoryReducer'
+import {productsReducer} from '../reducers/productsReducer'
 import thunk from 'redux-thunk'
 import { applyMiddleware } from 'redux';
 
@@ -13,7 +14,8 @@ const reducers = combineReducers({
     auth: authReducer,
     ui: uiReducers,
     authBack: authReducerBack,
-    categories: categoryReducer
+    categories: categoryReducer,
+    products: productsReducer
 
 
 })

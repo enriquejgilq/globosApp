@@ -28,7 +28,7 @@ import LocalAtmIcon from "@material-ui/icons/LocalAtm";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
 import AdapterLink from "../../AdapterLink";
 import { useDispatch } from "react-redux";
-import { startLogout, LogoutSystem } from "../../actions/auth";
+import { startLogout, LogoutSystem } from "../../redux/actions/auth";
 import Avatar from "@material-ui/core/Avatar";
 import imageA from "../../assets/GlobosApp-_1_.svg";
 

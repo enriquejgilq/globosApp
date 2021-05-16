@@ -10,9 +10,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import validator from "validator";
 import { useDispatch, useSelector } from "react-redux";
-import { removeError, setError } from "../../actions/ui";
-import ModalAlert from "../../components/ModalAlert";
-import { startRegisterwithEmailPassword, startRegister } from "../../actions/auth";
+import { removeError, setError } from "../../redux/actions/ui";
+import { startRegisterwithEmailPassword, startRegister } from "../../redux/actions/auth";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -99,7 +98,6 @@ export default function Register() {
       setemailError("");
       setpasswordError("");
       setphoneError("");
-      console.log("nombre vacio");
     } else if (!validator.isEmail(data.email)) {
       console.log("email vacio");
       setnameError("");
@@ -128,7 +126,6 @@ export default function Register() {
       setpasswordError("La contraseña tiene que tener más de 8 digitos");
       dispatch(setError("La contraseña tiene que tener más de 8 digitos"));
     } else {
-      console.log(data);
 
      /* dispatch(
         startRegisterwithEmailPassword(
@@ -148,7 +145,6 @@ dispatch(startRegister(
   data.phone
   ))
 
-      console.log(data);
       setnameError(" ");
       setemailError("");
       setpasswordError("");
@@ -241,7 +237,6 @@ dispatch(startRegister(
               <Copyright />
             </Box>
             {/*editar mensaje de error modal */}
-            <ModalAlert open={open} />
           </form>
         </div>
       </Grid>

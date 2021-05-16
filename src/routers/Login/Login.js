@@ -17,7 +17,7 @@ import {
   login,
   startGoogleLogin,
   startLoginEmailPassword,startLogin
-} from "../../actions/auth";
+} from "../../redux/actions/auth";
 import googleimg from "../../assets/googleimg.jpg";
 import CircularProgress from "@material-ui/core/CircularProgress";
 

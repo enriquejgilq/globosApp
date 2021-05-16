@@ -29,9 +29,19 @@ export const types = {
 
     categoryLoaded: '[event] Events loaded',
     categoryUpdate: '[event] categories update',
-    categoryDelete : '[event] categories delete'
+    categoryDelete : '[event] categories delete',
 
 
+
+    //products 
+    productsStartAddNew: '[products] Start products ',
+
+
+
+
+    
+    productLoaded: '[products] Products loaded',
+    productsUpdate: '[productss] products update',
 
 
 

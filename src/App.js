@@ -13,7 +13,7 @@ import { firebase } from "./firebase/firebaseConfig";
 
 import { makeStyles, CssBaseline } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
-import { login, startcheking } from "./actions/auth";
+import { login, startcheking } from "../src/redux/actions/auth";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { PrivateRoute } from "./routers/routes/PrivateRoute";
 import { PublicRoute } from "./routers/routes/PublicRoute";
