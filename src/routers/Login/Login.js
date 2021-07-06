@@ -16,10 +16,12 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   login,
   startGoogleLogin,
-  startLoginEmailPassword,startLogin
+  startLoginEmailPassword,
+  startLogin,
 } from "../../redux/actions/auth";
 import googleimg from "../../assets/googleimg.jpg";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import arcanista from "../../arcanista.json";
 
 function Copyright() {
   return (
@@ -103,14 +105,42 @@ export default function Login() {
       password: password.current.value,
     };
     dispatch(startLogin(data.email, data.password));
-   
   };
-
-
 
   const handleGoogleLogin = () => {
     dispatch(startGoogleLogin());
   };
+
+
+
+
+
+
+
+  const calculo = () => {
+    //map de los juegos. 
+    arcanista.matchHistory.map((x, i) => {
+      const totalmin = x.gameInformation.gameDuration / 60000;
+      console.log("Tiempo en min los juegos: ", totalmin);
+    });
+//total de milisegundos jugados
+    var total = 0;
+    arcanista.matchHistory.forEach(function (obj) {
+      total += parseInt(obj.gameInformation.gameDuration);
+    });
+    const totaldejuegos = arcanista.matchHistory.length;
+    console.log('total de juegos:', totaldejuegos);
+    console.log("total de milisegundos jugados", total);
+    const totalmin = total / 60000;
+    console.log("promedio de min jugados: ", totalmin / totaldejuegos);
+  };
+
+
+
+
+
+
+
 
   return (
     <Grid container component="main" className={classes.root}>
@@ -159,6 +189,15 @@ export default function Login() {
               disabled={loading}
             >
               Iniciar sesion
+            </Button>
+            <Button
+              type="button"
+              fullWidth
+              variant="contained"
+              color="primary"
+              onClick={calculo}
+            >
+              Iniciar asdasd
             </Button>
 
             <Button

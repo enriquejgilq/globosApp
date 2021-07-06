@@ -3,22 +3,6 @@ import { forwardRef } from "react";
 import { Grid, Button, Typography } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import AddBox from "@material-ui/icons/AddBox";
-import ArrowDownward from "@material-ui/icons/ArrowDownward";
-import Check from "@material-ui/icons/Check";
-import ChevronLeft from "@material-ui/icons/ChevronLeft";
-import ChevronRight from "@material-ui/icons/ChevronRight";
-import Clear from "@material-ui/icons/Clear";
-import DeleteOutline from "@material-ui/icons/DeleteOutline";
-import Edit from "@material-ui/icons/Edit";
-import FilterList from "@material-ui/icons/FilterList";
-import FirstPage from "@material-ui/icons/FirstPage";
-import LastPage from "@material-ui/icons/LastPage";
-import Remove from "@material-ui/icons/Remove";
-import SaveAlt from "@material-ui/icons/SaveAlt";
-import Search from "@material-ui/icons/Search";
-import ViewColumn from "@material-ui/icons/ViewColumn";
-import MaterialTable from "material-table";
 import { useDispatch, useSelector } from "react-redux";
 import {
   eventStartLoading,
@@ -27,39 +11,21 @@ import {
 } from "../../redux/actions/events";
 import useStyles from "./styles";
 import { addProducts } from "../../redux/actions/events";
-import Icon from "@material-ui/core/Icon";
-import SaveIcon from "@material-ui/icons/Save";
-import { makeStyles } from "@material-ui/core/styles";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
-import Alert from '../../components/Alert/'
-
-const tableIcons = {
-  Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
-  Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
-  Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
-  Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} />),
-  DetailPanel: forwardRef((props, ref) => (
-    <ChevronRight {...props} ref={ref} />
-  )),
-  Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} />),
-  Export: forwardRef((props, ref) => <SaveAlt {...props} ref={ref} />),
-  Filter: forwardRef((props, ref) => <FilterList {...props} ref={ref} />),
-  FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
-  LastPage: forwardRef((props, ref) => <LastPage {...props} ref={ref} />),
-  NextPage: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
-  PreviousPage: forwardRef((props, ref) => (
-    <ChevronLeft {...props} ref={ref} />
-  )),
-  ResetSearch: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
-  Search: forwardRef((props, ref) => <Search {...props} ref={ref} />),
-  SortArrow: forwardRef((props, ref) => <ArrowDownward {...props} ref={ref} />),
-  ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} />),
-  ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />),
-};
+import AlertDialogSlide from "../../components/ModalAlert/ModalAlert";
+import ComboBox from "../../components/Autocomplete";
+import { AllTables } from "../../components/Table/AllTables";
+import Edit from "@material-ui/icons/Edit";
+import Swal from "sweetalert2";
 
 export function DashBoardProducts() {
+  
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(productsLoaded());
+    dispatch(eventStartLoading());
+  }, [dispatch]);
+  const classes = useStyles();
+
   const { categories } = useSelector((state) => state.categories);
   const { products } = useSelector((state) => state.products);
   const [id_category, setid_category] = useState("");
@@ -67,45 +33,13 @@ export function DashBoardProducts() {
   const [open, setOpen] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);
 
+  
+  const [products_name, setproducts_name] = useState('')
+  const [amount, setamount] = useState('')
 
-
-  useEffect(() => {
-    dispatch(productsLoaded());
-    dispatch(eventStartLoading());
-  }, [dispatch]);
-  const classes = useStyles();
-  const products_name = useRef();
-  const amount = useRef();
   const [columns, setColumns] = useState([
     { title: "Nombre del producto", field: "products_name" },
-    {
-      title: "Categoria",
-      field: "name_category",
-      editComponent: props =>
-      <Autocomplete
-      id="combo-box-demo"
-      noOptionsText="No hay coincidencias"
-      options={categories}
-      clearOnBlur
-      getOptionLabel={(option) => option.category}
-      onInputChange={(event, newInputValue) => {
-        setname_category(newInputValue);
-      }}
-      renderOption={(option) => (
-        <React.Fragment>
-          <Typography>{option.category}-</Typography>
-          <Typography variant="subtitle2" color="textSecondary">
-            {option._id}
-          </Typography>
-        </React.Fragment>
-      )}
-      renderInput={(params) => <TextField {...params} variant="outlined" />}
-      onChange={(event, newValue) => {
-        setid_category(newValue?._id);
-      }}
-    />
-
-    },
+    {title: "Categoria", field: "category.name_category" },
     { title: "Cantidad", field: "amount", type: "number" },
   ]);
 
@@ -114,32 +48,71 @@ export function DashBoardProducts() {
     amount.current.value = "";
   };
 
-  const guardarDatos = (e) => {
-    e.preventDefault();
+  const handleClickOpen = (e) => {
+    setproducts_name(e.products_name)
+    setamount(e.amount)
+    setOpen(true);
+  
+  };
+  const handleClickclose = () => {
+    setproducts_name('')
+    setamount('')
+    setOpen(false);
+  };
+
+  const onSave = () => {
     const datos = {
-      products_name: products_name.current.value,
-      amount: amount.current.value,
+      products_name: products_name,
+      amount: amount,
       category: { name_category, id_category },
     };
     dispatch(addProducts(datos));
     dispatch(productsLoaded());
     dispatch(eventStartLoading());
-    cleanFields()
+  
   };
-
 
   const handleClose = () => {
     setOpen(false);
   };
   const handleOpenAlert = (e) => {
-    const data = { categories}
-   setOpenAlert(true);
+    setproducts_name(e.products_name)
+    console.log(e.products_name);
+    console.log(categories);
+
+    const inputOptions = categories.reduce((o, i) => {
+      o[" " + i._id] = i.category;
+      return o;
+    }, {});
+
+    Swal.fire({
+      title: "Select Tag",
+      html: '<input id="swal-input1" class="swal2-input">',
+      input: "select",
+      inputOptions,
+      inputPlaceholder: "Select tag",
+      showCancelButton: true,
+      inputValidator: function (value) {
+        return new Promise(function (resolve, reject) {
+          if (value != "") {
+            document.getElementById("taginfo").name_category = value;
+            resolve();
+          } else {
+            reject("You need to select one tag");
+          }
+        });
+      },
+    }).then(function (result) {
+      Swal.fire({
+        type: "success",
+        html: "You selected: " + result,
+      });
+    });
   };
   const handleCloseAlert = () => {
     setOpenAlert(false);
   };
 
-  
   return (
     <Grid
       container
@@ -150,80 +123,18 @@ export function DashBoardProducts() {
       alignItems="stretch"
       spacing={1}
     >
-      <Grid item xs={12} md={6}>
-        <Autocomplete
-          id="combo-box-demo"
-          noOptionsText="No hay coincidencias"
-          options={categories}
-          clearOnBlur
-          getOptionLabel={(option) => option.category}
-          onInputChange={(event, newInputValue) => {
-            setname_category(newInputValue);
-          }}
-          renderOption={(option) => (
-            <React.Fragment>
-              <Typography>{option.category}-</Typography>
-              <Typography variant="subtitle2" color="textSecondary">
-                {option._id}
-              </Typography>
-            </React.Fragment>
-          )}
-          renderInput={(params) => <TextField {...params} variant="outlined" />}
-          onChange={(event, newValue) => {
-            setid_category(newValue?._id);
-          }}
-        />
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        md={6}
-        direction="row"
-        justify="flex-end"
-        alignItems="flex-end"
-        spacing={1}
-      >
-        <form className={classes.form} onSubmit={guardarDatos}>
-          <TextField
-            fullWidth
-            id="outlined-basic"
-            label="Nombre del producto"
-            variant="outlined"
-            required
-            autoComplete="false"
-            inputRef={products_name}
-          />
-          <Grid item xs={12} md={12} className={classes.cnt}>
-            <TextField
-              className={classes.text}
-              id="outlined-basic"
-              label="Cantidad"
-              variant="outlined"
-              type="number"
-              inputRef={amount}
-              required
-            />
-            <Button
-              variant="contained"
-              color="primary"
-              size="small"
-              type="submit"
-              className={classes.button}
-            >
-              <Typography className={classes.txt}> Guardar</Typography>
-            </Button>
-          </Grid>
-        </form>
-      </Grid>
-
       <Grid item xs={12} md={12}>
-        <MaterialTable
-          title={<Typography className={classes.txt}> Productos </Typography>}
-          icons={tableIcons}
+        <AllTables
+          title="Productos"
           columns={columns}
           data={products}
           editable={{
-           
+            onRowAdd: (newData) =>
+              new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  resolve();
+                }, 1000);
+              }),
             onRowDelete: (oldData) =>
               new Promise((resolve, reject) => {
                 setTimeout(() => {
@@ -232,45 +143,77 @@ export function DashBoardProducts() {
               }),
           }}
           actions={[
-        {
-          icon: () => <Edit fontSize="small" />,
-          tooltip: 'Editar',
-          onClick: (event, rowData) =>{
-            handleOpenAlert(rowData)
-          }
-        },
-      ]}
-
-          
-          options={{
-            actionsColumnIndex: -1,
-          }}
-          localization={{
-            header: {
-              actions: "Acciones",
+            {
+              icon: () => <Edit fontSize="small" />,
+              tooltip: "Editar",
+              onClick: (event, rowData) => {
+                handleClickOpen(rowData);
+              },
             },
-          }}
+          ]}
         />
 
-<Alert
-        text={<h2>asd</h2>}
-        open={openAlert}
-        handleOpen={handleOpenAlert}
-        handleClose={handleCloseAlert}
-        categories={categories}
-        buttons={
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            onClick={handleCloseAlert}
-          >
-            Aceptar
-          </Button>
-        }
-      />
+        <AlertDialogSlide
+          title="Editar Producto "
+          open={open}
+          handleClickOpen={handleClickOpen}
+          handleClickclose={handleClickclose}
+          categories={categories}
+          handleSave={onSave}
+        >
+          <Grid container spacing={2} xs={12} md={12}>
+            <Grid item xs={6} md={6}>
+            <TextField
+            fullWidth
+            label="Nombre del producto"
+            variant="outlined"
+            required
+            autoComplete="false"
+            value={products_name}
+            
+          />
+            </Grid>
+            <Grid item xs={6} md={6}>
+            <TextField
+              className={classes.text}
+              id="outlined-basic"
+              label="Cantidad"
+              variant="outlined"
+              type="number"
+              value={amount}
+              required
+            />
+            </Grid>
+            <Grid item xs={6} md={6}>
+              <Autocomplete
+                id="combo-box-demo"
+                noOptionsText="No hay coincidencias"
+                options={categories}
+                clearOnBlur
+                getOptionLabel={(option) => option.category}
+                onInputChange={(event, newInputValue) => {
+                  setname_category(newInputValue);
+                }}
+                renderOption={(option) => (
+                  <React.Fragment>
+                    <Typography>{option.category}-</Typography>
+                    <Typography variant="subtitle2" color="textSecondary">
+                      {option._id}
+                    </Typography>
+                  </React.Fragment>
+                )}
+                renderInput={(params) => (
+                  <TextField {...params} variant="outlined" />
+                )}
+                onChange={(event, newValue) => {
+                  setid_category(newValue?._id);
+                }}
+              />
+            </Grid>
+          </Grid>
+        </AlertDialogSlide>
       </Grid>
     </Grid>
   );
 }
-//CAMBIAR CATEGORIA DE PRODUCTO
+//el agregar y editar llamar modal para hacer las funciones.

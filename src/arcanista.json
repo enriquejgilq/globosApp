@@ -1,0 +1,2126 @@
+{
+    "matchHistory": [
+        {
+            "teamsData": [
+                {
+                    "players": [
+                        {
+                            "kills": 5,
+                            "deaths": 13,
+                            "assists": 8,
+                            "kda": 1,
+                            "championName": "Draven",
+                            "championLevel": 15,
+                            "summonerName": "Itshadow548",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 115026,
+                            "experience": 13511,
+                            "totalGold": 11915,
+                            "items": [
+                                3036,
+                                6692,
+                                3006,
+                                6676,
+                                0,
+                                0,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                7
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 0,
+                            "wardsPlaced": 7,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 331.62,
+                            "damagePerMinute": 3201.38,
+                            "experiencePerMinute": 376.04,
+                            "killSharing": 11.63,
+                            "damageSharing": 14.87,
+                            "killParticipation": 30.23
+                        },
+                        {
+                            "kills": 5,
+                            "deaths": 7,
+                            "assists": 15,
+                            "kda": 2.86,
+                            "championName": "Galio",
+                            "championLevel": 15,
+                            "summonerName": "Kcarrion23",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 102242,
+                            "experience": 14091,
+                            "totalGold": 11318,
+                            "items": [
+                                3853,
+                                2065,
+                                3075,
+                                3047,
+                                3742,
+                                0,
+                                3340
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 0,
+                            "wardsPlaced": 39,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 315,
+                            "damagePerMinute": 2845.58,
+                            "experiencePerMinute": 392.18,
+                            "killSharing": 11.63,
+                            "damageSharing": 13.22,
+                            "killParticipation": 46.51
+                        },
+                        {
+                            "kills": 16,
+                            "deaths": 8,
+                            "assists": 7,
+                            "kda": 2.88,
+                            "championName": "MasterYi",
+                            "championLevel": 18,
+                            "summonerName": "ElChicoDelTamal",
+                            "role": "NONE",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": false,
+                            "totalDamage": 253627,
+                            "experience": 19706,
+                            "totalGold": 17952,
+                            "items": [
+                                6673,
+                                3153,
+                                6333,
+                                3006,
+                                3124,
+                                1038,
+                                3340
+                            ],
+                            "spells": [
+                                11,
+                                4
+                            ],
+                            "doubleKills": 3,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 6,
+                            "wardsPlaced": 8,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 499.64,
+                            "damagePerMinute": 7058.9,
+                            "experiencePerMinute": 548.45,
+                            "killSharing": 37.21,
+                            "damageSharing": 32.78,
+                            "killParticipation": 53.49
+                        },
+                        {
+                            "kills": 10,
+                            "deaths": 6,
+                            "assists": 12,
+                            "kda": 3.67,
+                            "championName": "Aatrox",
+                            "championLevel": 18,
+                            "summonerName": "Jugo de LuIo",
+                            "role": "SOLO",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": false,
+                            "totalDamage": 168227,
+                            "experience": 18442,
+                            "totalGold": 16103,
+                            "items": [
+                                6630,
+                                3074,
+                                6609,
+                                3065,
+                                3047,
+                                0,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                12
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 6,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 448.18,
+                            "damagePerMinute": 4682.07,
+                            "experiencePerMinute": 513.27,
+                            "killSharing": 23.26,
+                            "damageSharing": 21.75,
+                            "killParticipation": 51.16
+                        },
+                        {
+                            "kills": 7,
+                            "deaths": 4,
+                            "assists": 16,
+                            "kda": 5.75,
+                            "championName": "Ahri",
+                            "championLevel": 18,
+                            "summonerName": "Tomate de árboI",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 134497,
+                            "experience": 18415,
+                            "totalGold": 12875,
+                            "items": [
+                                1052,
+                                6656,
+                                3157,
+                                4629,
+                                3020,
+                                0,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 7,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 358.33,
+                            "damagePerMinute": 3743.3,
+                            "experiencePerMinute": 512.52,
+                            "killSharing": 16.28,
+                            "damageSharing": 17.39,
+                            "killParticipation": 53.49
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 120,
+                            "pickTurn": 1
+                        },
+                        {
+                            "championId": 89,
+                            "pickTurn": 2
+                        },
+                        {
+                            "championId": 62,
+                            "pickTurn": 3
+                        },
+                        {
+                            "championId": 777,
+                            "pickTurn": 4
+                        },
+                        {
+                            "championId": 555,
+                            "pickTurn": 5
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": true,
+                            "kills": 1
+                        },
+                        "champion": {
+                            "first": true,
+                            "kills": 43
+                        },
+                        "dragon": {
+                            "first": true,
+                            "kills": 5
+                        },
+                        "inhibitor": {
+                            "first": true,
+                            "kills": 3
+                        },
+                        "riftHerald": {
+                            "first": true,
+                            "kills": 2
+                        },
+                        "tower": {
+                            "first": true,
+                            "kills": 10
+                        }
+                    },
+                    "teamId": "Blue",
+                    "win": false
+                },
+                {
+                    "players": [
+                        {
+                            "kills": 5,
+                            "deaths": 10,
+                            "assists": 14,
+                            "kda": 1.9,
+                            "championName": "Renekton",
+                            "championLevel": 16,
+                            "summonerName": "Akaikó",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 151904,
+                            "experience": 16043,
+                            "totalGold": 12438,
+                            "items": [
+                                6631,
+                                3123,
+                                1055,
+                                3053,
+                                3047,
+                                3075,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                12
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 0,
+                            "wardsPlaced": 12,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 346.17,
+                            "damagePerMinute": 4227.77,
+                            "experiencePerMinute": 446.51,
+                            "killSharing": 13.16,
+                            "damageSharing": 23.5,
+                            "killParticipation": 50
+                        },
+                        {
+                            "kills": 14,
+                            "deaths": 3,
+                            "assists": 9,
+                            "kda": 7.67,
+                            "championName": "MissFortune",
+                            "championLevel": 17,
+                            "summonerName": "Yuyi",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 130059,
+                            "experience": 16613,
+                            "totalGold": 14861,
+                            "items": [
+                                6676,
+                                6671,
+                                3026,
+                                3006,
+                                0,
+                                3033,
+                                3363
+                            ],
+                            "spells": [
+                                7,
+                                4
+                            ],
+                            "doubleKills": 3,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 2,
+                            "wardsPlaced": 11,
+                            "largestKillingSpree": 8,
+                            "goldPerMinute": 413.61,
+                            "damagePerMinute": 3619.78,
+                            "experiencePerMinute": 462.37,
+                            "killSharing": 36.84,
+                            "damageSharing": 20.12,
+                            "killParticipation": 60.53
+                        },
+                        {
+                            "kills": 8,
+                            "deaths": 8,
+                            "assists": 10,
+                            "kda": 2.25,
+                            "championName": "Volibear",
+                            "championLevel": 16,
+                            "summonerName": "Arcanista",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 136269,
+                            "experience": 15479,
+                            "totalGold": 12826,
+                            "items": [
+                                3076,
+                                1011,
+                                6664,
+                                3742,
+                                3065,
+                                3158,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                11
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 9,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 356.97,
+                            "damagePerMinute": 3792.62,
+                            "experiencePerMinute": 430.81,
+                            "killSharing": 21.05,
+                            "damageSharing": 21.08,
+                            "killParticipation": 47.37
+                        },
+                        {
+                            "kills": 5,
+                            "deaths": 12,
+                            "assists": 10,
+                            "kda": 1.25,
+                            "championName": "Diana",
+                            "championLevel": 16,
+                            "summonerName": "Kromsthor ",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 130651,
+                            "experience": 15525,
+                            "totalGold": 11589,
+                            "items": [
+                                3165,
+                                4636,
+                                3157,
+                                3020,
+                                4630,
+                                0,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 10,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 322.54,
+                            "damagePerMinute": 3636.26,
+                            "experiencePerMinute": 432.09,
+                            "killSharing": 13.16,
+                            "damageSharing": 20.21,
+                            "killParticipation": 39.47
+                        },
+                        {
+                            "kills": 6,
+                            "deaths": 10,
+                            "assists": 22,
+                            "kda": 2.8,
+                            "championName": "Syndra",
+                            "championLevel": 16,
+                            "summonerName": "LTG AxKhan",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 97622,
+                            "experience": 14904,
+                            "totalGold": 11695,
+                            "items": [
+                                6655,
+                                3157,
+                                3853,
+                                3165,
+                                3070,
+                                3020,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                12
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 39,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 325.49,
+                            "damagePerMinute": 2717,
+                            "experiencePerMinute": 414.81,
+                            "killSharing": 15.79,
+                            "damageSharing": 15.1,
+                            "killParticipation": 73.68
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 234,
+                            "pickTurn": 6
+                        },
+                        {
+                            "championId": 25,
+                            "pickTurn": 7
+                        },
+                        {
+                            "championId": 121,
+                            "pickTurn": 8
+                        },
+                        {
+                            "championId": 517,
+                            "pickTurn": 9
+                        },
+                        {
+                            "championId": 136,
+                            "pickTurn": 10
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": false,
+                            "kills": 1
+                        },
+                        "champion": {
+                            "first": false,
+                            "kills": 38
+                        },
+                        "dragon": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "inhibitor": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "riftHerald": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "tower": {
+                            "first": false,
+                            "kills": 3
+                        }
+                    },
+                    "teamId": "Red",
+                    "win": false
+                }
+            ],
+            "gameInformation": {
+                "gameDuration": 2155805,
+                "winner": "Red"
+            }
+        },
+        {
+            "teamsData": [
+                {
+                    "players": [
+                        {
+                            "kills": 9,
+                            "deaths": 8,
+                            "assists": 5,
+                            "kda": 1.75,
+                            "championName": "Fizz",
+                            "championLevel": 16,
+                            "summonerName": "Akaikó",
+                            "role": "SOLO",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": false,
+                            "totalDamage": 135836,
+                            "experience": 16386,
+                            "totalGold": 13621,
+                            "items": [
+                                3165,
+                                4636,
+                                3157,
+                                3020,
+                                3100,
+                                0,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 12,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 376.78,
+                            "damagePerMinute": 3757.47,
+                            "experiencePerMinute": 453.27,
+                            "killSharing": 31.03,
+                            "damageSharing": 16.27,
+                            "killParticipation": 48.28
+                        },
+                        {
+                            "kills": 2,
+                            "deaths": 8,
+                            "assists": 11,
+                            "kda": 1.63,
+                            "championName": "Zac",
+                            "championLevel": 15,
+                            "summonerName": "Arcanista",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 160420,
+                            "experience": 13616,
+                            "totalGold": 10895,
+                            "items": [
+                                3158,
+                                3083,
+                                3068,
+                                3076,
+                                3067,
+                                3211,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                11
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 1,
+                            "wardsPlaced": 12,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 301.38,
+                            "damagePerMinute": 4437.51,
+                            "experiencePerMinute": 376.64,
+                            "killSharing": 6.9,
+                            "damageSharing": 19.22,
+                            "killParticipation": 44.83
+                        },
+                        {
+                            "kills": 4,
+                            "deaths": 5,
+                            "assists": 5,
+                            "kda": 1.8,
+                            "championName": "Gnar",
+                            "championLevel": 18,
+                            "summonerName": "LTG AxKhan",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": true,
+                            "totalDamage": 224954,
+                            "experience": 18376,
+                            "totalGold": 14603,
+                            "items": [
+                                3053,
+                                3742,
+                                3133,
+                                3067,
+                                3111,
+                                3078,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                12
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 2,
+                            "wardsPlaced": 16,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 403.95,
+                            "damagePerMinute": 6222.64,
+                            "experiencePerMinute": 508.31,
+                            "killSharing": 13.79,
+                            "damageSharing": 26.95,
+                            "killParticipation": 31.03
+                        },
+                        {
+                            "kills": 11,
+                            "deaths": 8,
+                            "assists": 8,
+                            "kda": 2.38,
+                            "championName": "Ezreal",
+                            "championLevel": 17,
+                            "summonerName": "Kaigul",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 283911,
+                            "experience": 17656,
+                            "totalGold": 17064,
+                            "items": [
+                                3042,
+                                6694,
+                                6609,
+                                3158,
+                                3508,
+                                6691,
+                                3363
+                            ],
+                            "spells": [
+                                7,
+                                4
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 1,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 17,
+                            "largestKillingSpree": 6,
+                            "goldPerMinute": 472.02,
+                            "damagePerMinute": 7853.5,
+                            "experiencePerMinute": 488.4,
+                            "killSharing": 37.93,
+                            "damageSharing": 34.01,
+                            "killParticipation": 65.52
+                        },
+                        {
+                            "kills": 3,
+                            "deaths": 6,
+                            "assists": 12,
+                            "kda": 2.5,
+                            "championName": "Rell",
+                            "championLevel": 15,
+                            "summonerName": "Pink Tapa",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 29645,
+                            "experience": 13152,
+                            "totalGold": 8985,
+                            "items": [
+                                3857,
+                                3190,
+                                3111,
+                                3075,
+                                1011,
+                                2055,
+                                3364
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 8,
+                            "wardsPlaced": 29,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 248.54,
+                            "damagePerMinute": 820.04,
+                            "experiencePerMinute": 363.81,
+                            "killSharing": 10.34,
+                            "damageSharing": 3.55,
+                            "killParticipation": 51.72
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 887,
+                            "pickTurn": 1
+                        },
+                        {
+                            "championId": 121,
+                            "pickTurn": 2
+                        },
+                        {
+                            "championId": 82,
+                            "pickTurn": 3
+                        },
+                        {
+                            "championId": 42,
+                            "pickTurn": 4
+                        },
+                        {
+                            "championId": 234,
+                            "pickTurn": 5
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "champion": {
+                            "first": true,
+                            "kills": 29
+                        },
+                        "dragon": {
+                            "first": true,
+                            "kills": 1
+                        },
+                        "inhibitor": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "riftHerald": {
+                            "first": true,
+                            "kills": 2
+                        },
+                        "tower": {
+                            "first": true,
+                            "kills": 5
+                        }
+                    },
+                    "teamId": "Blue",
+                    "win": false
+                },
+                {
+                    "players": [
+                        {
+                            "kills": 12,
+                            "deaths": 6,
+                            "assists": 8,
+                            "kda": 3.33,
+                            "championName": "Jinx",
+                            "championLevel": 16,
+                            "summonerName": "Zurgioni",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 269468,
+                            "experience": 16383,
+                            "totalGold": 17406,
+                            "items": [
+                                3094,
+                                3006,
+                                6672,
+                                3046,
+                                3031,
+                                1053,
+                                3363
+                            ],
+                            "spells": [
+                                7,
+                                4
+                            ],
+                            "doubleKills": 3,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 8,
+                            "wardsPlaced": 13,
+                            "largestKillingSpree": 6,
+                            "goldPerMinute": 481.48,
+                            "damagePerMinute": 7453.98,
+                            "experiencePerMinute": 453.18,
+                            "killSharing": 34.29,
+                            "damageSharing": 32.25,
+                            "killParticipation": 57.14
+                        },
+                        {
+                            "kills": 10,
+                            "deaths": 9,
+                            "assists": 8,
+                            "kda": 2,
+                            "championName": "Kassadin",
+                            "championLevel": 18,
+                            "summonerName": "valdovinos",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 158679,
+                            "experience": 18656,
+                            "totalGold": 15004,
+                            "items": [
+                                1082,
+                                6656,
+                                3157,
+                                3020,
+                                3040,
+                                3100,
+                                3364
+                            ],
+                            "spells": [
+                                12,
+                                4
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 4,
+                            "wardsPlaced": 4,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 415.04,
+                            "damagePerMinute": 4389.35,
+                            "experiencePerMinute": 516.06,
+                            "killSharing": 28.57,
+                            "damageSharing": 18.99,
+                            "killParticipation": 51.43
+                        },
+                        {
+                            "kills": 1,
+                            "deaths": 3,
+                            "assists": 25,
+                            "kda": 8.67,
+                            "championName": "Lulu",
+                            "championLevel": 16,
+                            "summonerName": "Mariano Kaboom",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 22086,
+                            "experience": 15892,
+                            "totalGold": 10501,
+                            "items": [
+                                3860,
+                                3157,
+                                3504,
+                                3114,
+                                3158,
+                                6617,
+                                3364
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 8,
+                            "wardsPlaced": 25,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 290.48,
+                            "damagePerMinute": 610.94,
+                            "experiencePerMinute": 439.6,
+                            "killSharing": 2.86,
+                            "damageSharing": 2.64,
+                            "killParticipation": 74.29
+                        },
+                        {
+                            "kills": 4,
+                            "deaths": 7,
+                            "assists": 16,
+                            "kda": 2.86,
+                            "championName": "Sylas",
+                            "championLevel": 18,
+                            "summonerName": "Hugo Buzz",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 194723,
+                            "experience": 18659,
+                            "totalGold": 14675,
+                            "items": [
+                                6656,
+                                3157,
+                                4629,
+                                3165,
+                                3020,
+                                1011,
+                                3364
+                            ],
+                            "spells": [
+                                12,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 8,
+                            "wardsPlaced": 8,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 405.94,
+                            "damagePerMinute": 5386.4,
+                            "experiencePerMinute": 516.14,
+                            "killSharing": 11.43,
+                            "damageSharing": 23.31,
+                            "killParticipation": 57.14
+                        },
+                        {
+                            "kills": 8,
+                            "deaths": 4,
+                            "assists": 13,
+                            "kda": 5.25,
+                            "championName": "Morgana",
+                            "championLevel": 18,
+                            "summonerName": "Aguizarw",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 190517,
+                            "experience": 19038,
+                            "totalGold": 14403,
+                            "items": [
+                                2031,
+                                3157,
+                                3020,
+                                6653,
+                                4637,
+                                3165,
+                                3364
+                            ],
+                            "spells": [
+                                11,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 8,
+                            "wardsPlaced": 4,
+                            "largestKillingSpree": 6,
+                            "goldPerMinute": 398.41,
+                            "damagePerMinute": 5270.05,
+                            "experiencePerMinute": 526.63,
+                            "killSharing": 22.86,
+                            "damageSharing": 22.8,
+                            "killParticipation": 60
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 147,
+                            "pickTurn": 6
+                        },
+                        {
+                            "championId": 234,
+                            "pickTurn": 7
+                        },
+                        {
+                            "championId": 555,
+                            "pickTurn": 8
+                        },
+                        {
+                            "championId": 114,
+                            "pickTurn": 9
+                        },
+                        {
+                            "championId": 887,
+                            "pickTurn": 10
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": true,
+                            "kills": 2
+                        },
+                        "champion": {
+                            "first": false,
+                            "kills": 35
+                        },
+                        "dragon": {
+                            "first": false,
+                            "kills": 4
+                        },
+                        "inhibitor": {
+                            "first": true,
+                            "kills": 4
+                        },
+                        "riftHerald": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "tower": {
+                            "first": false,
+                            "kills": 11
+                        }
+                    },
+                    "teamId": "Red",
+                    "win": false
+                }
+            ],
+            "gameInformation": {
+                "gameDuration": 2169053,
+                "winner": "Red"
+            }
+        },
+        {
+            "teamsData": [
+                {
+                    "players": [
+                        {
+                            "kills": 7,
+                            "deaths": 8,
+                            "assists": 3,
+                            "kda": 1.25,
+                            "championName": "Jayce",
+                            "championLevel": 18,
+                            "summonerName": "Ayotsij",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 202872,
+                            "experience": 18806,
+                            "totalGold": 14263,
+                            "items": [
+                                6694,
+                                2055,
+                                3047,
+                                6692,
+                                3042,
+                                3053,
+                                3364
+                            ],
+                            "spells": [
+                                12,
+                                4
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 9,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 383.24,
+                            "damagePerMinute": 5451.12,
+                            "experiencePerMinute": 505.31,
+                            "killSharing": 26.92,
+                            "damageSharing": 23.47,
+                            "killParticipation": 38.46
+                        },
+                        {
+                            "kills": 1,
+                            "deaths": 10,
+                            "assists": 16,
+                            "kda": 1.7,
+                            "championName": "Hecarim",
+                            "championLevel": 17,
+                            "summonerName": "Arcanista",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 187126,
+                            "experience": 16952,
+                            "totalGold": 11691,
+                            "items": [
+                                4401,
+                                6664,
+                                3158,
+                                3742,
+                                2055,
+                                0,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                11
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 1,
+                            "wardsPlaced": 11,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 314.13,
+                            "damagePerMinute": 5028.03,
+                            "experiencePerMinute": 455.5,
+                            "killSharing": 3.85,
+                            "damageSharing": 21.65,
+                            "killParticipation": 65.38
+                        },
+                        {
+                            "kills": 6,
+                            "deaths": 5,
+                            "assists": 14,
+                            "kda": 4,
+                            "championName": "Gwen",
+                            "championLevel": 18,
+                            "summonerName": "Akaikó",
+                            "role": "SOLO",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": false,
+                            "totalDamage": 155562,
+                            "experience": 18561,
+                            "totalGold": 15007,
+                            "items": [
+                                3916,
+                                4633,
+                                3157,
+                                4637,
+                                3115,
+                                3158,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 2,
+                            "wardsPlaced": 14,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 403.23,
+                            "damagePerMinute": 4179.91,
+                            "experiencePerMinute": 498.73,
+                            "killSharing": 23.08,
+                            "damageSharing": 18,
+                            "killParticipation": 76.92
+                        },
+                        {
+                            "kills": 7,
+                            "deaths": 8,
+                            "assists": 13,
+                            "kda": 2.5,
+                            "championName": "Sivir",
+                            "championLevel": 17,
+                            "summonerName": "LTG AxKhan",
+                            "role": "CARRY",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": true,
+                            "totalDamage": 223245,
+                            "experience": 18262,
+                            "totalGold": 15780,
+                            "items": [
+                                3042,
+                                0,
+                                3158,
+                                6691,
+                                6694,
+                                6676,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                7
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 21,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 424,
+                            "damagePerMinute": 5998.54,
+                            "experiencePerMinute": 490.7,
+                            "killSharing": 26.92,
+                            "damageSharing": 25.83,
+                            "killParticipation": 76.92
+                        },
+                        {
+                            "kills": 5,
+                            "deaths": 10,
+                            "assists": 9,
+                            "kda": 1.4,
+                            "championName": "Brand",
+                            "championLevel": 16,
+                            "summonerName": "DarckMaster00",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": true,
+                            "totalDamage": 95618,
+                            "experience": 16263,
+                            "totalGold": 12608,
+                            "items": [
+                                3853,
+                                3157,
+                                1052,
+                                3020,
+                                3089,
+                                6653,
+                                3364
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 6,
+                            "wardsPlaced": 33,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 338.77,
+                            "damagePerMinute": 2569.23,
+                            "experiencePerMinute": 436.98,
+                            "killSharing": 19.23,
+                            "damageSharing": 11.06,
+                            "killParticipation": 53.85
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 234,
+                            "pickTurn": 1
+                        },
+                        {
+                            "championId": 21,
+                            "pickTurn": 2
+                        },
+                        {
+                            "championId": 238,
+                            "pickTurn": 3
+                        },
+                        {
+                            "championId": 121,
+                            "pickTurn": 4
+                        },
+                        {
+                            "championId": 6,
+                            "pickTurn": 5
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": true,
+                            "kills": 1
+                        },
+                        "champion": {
+                            "first": true,
+                            "kills": 26
+                        },
+                        "dragon": {
+                            "first": false,
+                            "kills": 2
+                        },
+                        "inhibitor": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "riftHerald": {
+                            "first": true,
+                            "kills": 2
+                        },
+                        "tower": {
+                            "first": true,
+                            "kills": 5
+                        }
+                    },
+                    "teamId": "Blue",
+                    "win": false
+                },
+                {
+                    "players": [
+                        {
+                            "kills": 3,
+                            "deaths": 6,
+                            "assists": 6,
+                            "kda": 1.5,
+                            "championName": "Jax",
+                            "championLevel": 18,
+                            "summonerName": "luximar",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 187004,
+                            "experience": 18391,
+                            "totalGold": 13053,
+                            "items": [
+                                1033,
+                                3153,
+                                3047,
+                                6632,
+                                6333,
+                                3051,
+                                3340
+                            ],
+                            "spells": [
+                                12,
+                                4
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 4,
+                            "wardsPlaced": 13,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 350.73,
+                            "damagePerMinute": 5024.75,
+                            "experiencePerMinute": 494.16,
+                            "killSharing": 7.32,
+                            "damageSharing": 20.44,
+                            "killParticipation": 21.95
+                        },
+                        {
+                            "kills": 11,
+                            "deaths": 7,
+                            "assists": 13,
+                            "kda": 3.43,
+                            "championName": "Nocturne",
+                            "championLevel": 18,
+                            "summonerName": "Tripton",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 225063,
+                            "experience": 19473,
+                            "totalGold": 15238,
+                            "items": [
+                                6691,
+                                3091,
+                                3133,
+                                3047,
+                                6609,
+                                3053,
+                                3364
+                            ],
+                            "spells": [
+                                11,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 14,
+                            "wardsPlaced": 2,
+                            "largestKillingSpree": 5,
+                            "goldPerMinute": 409.44,
+                            "damagePerMinute": 6047.38,
+                            "experiencePerMinute": 523.23,
+                            "killSharing": 26.83,
+                            "damageSharing": 24.6,
+                            "killParticipation": 58.54
+                        },
+                        {
+                            "kills": 13,
+                            "deaths": 4,
+                            "assists": 6,
+                            "kda": 4.75,
+                            "championName": "Ekko",
+                            "championLevel": 18,
+                            "summonerName": "Bolas Erectas",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 213371,
+                            "experience": 20625,
+                            "totalGold": 16948,
+                            "items": [
+                                3089,
+                                3157,
+                                3152,
+                                1052,
+                                3100,
+                                3020,
+                                3340
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 3,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 2,
+                            "wardsPlaced": 10,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 455.39,
+                            "damagePerMinute": 5733.22,
+                            "experiencePerMinute": 554.19,
+                            "killSharing": 31.71,
+                            "damageSharing": 23.32,
+                            "killParticipation": 46.34
+                        },
+                        {
+                            "kills": 12,
+                            "deaths": 3,
+                            "assists": 17,
+                            "kda": 9.67,
+                            "championName": "Jinx",
+                            "championLevel": 18,
+                            "summonerName": "OmP Gacho",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 255130,
+                            "experience": 20097,
+                            "totalGold": 19243,
+                            "items": [
+                                3026,
+                                6672,
+                                3006,
+                                3094,
+                                3031,
+                                3033,
+                                3363
+                            ],
+                            "spells": [
+                                7,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 11,
+                            "wardsPlaced": 12,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 517.05,
+                            "damagePerMinute": 6855.28,
+                            "experiencePerMinute": 540,
+                            "killSharing": 29.27,
+                            "damageSharing": 27.89,
+                            "killParticipation": 70.73
+                        },
+                        {
+                            "kills": 2,
+                            "deaths": 6,
+                            "assists": 28,
+                            "kda": 5,
+                            "championName": "Thresh",
+                            "championLevel": 17,
+                            "summonerName": "OmP Terpi",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 34289,
+                            "experience": 16583,
+                            "totalGold": 10167,
+                            "items": [
+                                3857,
+                                3107,
+                                3190,
+                                3075,
+                                3117,
+                                2055,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 10,
+                            "wardsPlaced": 37,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 273.18,
+                            "damagePerMinute": 921.34,
+                            "experiencePerMinute": 445.58,
+                            "killSharing": 4.88,
+                            "damageSharing": 3.75,
+                            "killParticipation": 73.17
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 122,
+                            "pickTurn": 6
+                        },
+                        {
+                            "championId": 25,
+                            "pickTurn": 7
+                        },
+                        {
+                            "championId": 234,
+                            "pickTurn": 8
+                        },
+                        {
+                            "championId": 84,
+                            "pickTurn": 9
+                        },
+                        {
+                            "championId": 517,
+                            "pickTurn": 10
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": false,
+                            "kills": 1
+                        },
+                        "champion": {
+                            "first": false,
+                            "kills": 41
+                        },
+                        "dragon": {
+                            "first": true,
+                            "kills": 4
+                        },
+                        "inhibitor": {
+                            "first": true,
+                            "kills": 3
+                        },
+                        "riftHerald": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "tower": {
+                            "first": false,
+                            "kills": 10
+                        }
+                    },
+                    "teamId": "Red",
+                    "win": false
+                }
+            ],
+            "gameInformation": {
+                "gameDuration": 2232995,
+                "winner": "Red"
+            }
+        },
+        {
+            "teamsData": [
+                {
+                    "players": [
+                        {
+                            "kills": 16,
+                            "deaths": 10,
+                            "assists": 8,
+                            "kda": 2.4,
+                            "championName": "Mordekaiser",
+                            "championLevel": 18,
+                            "summonerName": "l Cåmus l",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 198023,
+                            "experience": 20249,
+                            "totalGold": 17181,
+                            "items": [
+                                3075,
+                                4633,
+                                3157,
+                                3020,
+                                4637,
+                                3065,
+                                3363
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 4,
+                            "wardsPlaced": 11,
+                            "largestKillingSpree": 5,
+                            "goldPerMinute": 465.14,
+                            "damagePerMinute": 5361.1,
+                            "experiencePerMinute": 548.2,
+                            "killSharing": 34.04,
+                            "damageSharing": 20.65,
+                            "killParticipation": 51.06
+                        },
+                        {
+                            "kills": 5,
+                            "deaths": 9,
+                            "assists": 18,
+                            "kda": 2.56,
+                            "championName": "Hecarim",
+                            "championLevel": 17,
+                            "summonerName": "Arcanista",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 190476,
+                            "experience": 17740,
+                            "totalGold": 12773,
+                            "items": [
+                                6664,
+                                3742,
+                                3158,
+                                4401,
+                                3211,
+                                3067,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                11
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 1,
+                            "wardsPlaced": 8,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 345.8,
+                            "damagePerMinute": 5156.78,
+                            "experiencePerMinute": 480.28,
+                            "killSharing": 10.64,
+                            "damageSharing": 19.86,
+                            "killParticipation": 48.94
+                        },
+                        {
+                            "kills": 9,
+                            "deaths": 7,
+                            "assists": 12,
+                            "kda": 3,
+                            "championName": "Yasuo",
+                            "championLevel": 18,
+                            "summonerName": "Akaikó",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 236973,
+                            "experience": 21057,
+                            "totalGold": 16143,
+                            "items": [
+                                6673,
+                                3031,
+                                1055,
+                                3033,
+                                3006,
+                                3133,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                14
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 4,
+                            "wardsPlaced": 18,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 437.04,
+                            "damagePerMinute": 6415.59,
+                            "experiencePerMinute": 570.08,
+                            "killSharing": 19.15,
+                            "damageSharing": 24.71,
+                            "killParticipation": 44.68
+                        },
+                        {
+                            "kills": 13,
+                            "deaths": 4,
+                            "assists": 9,
+                            "kda": 5.5,
+                            "championName": "Sivir",
+                            "championLevel": 18,
+                            "summonerName": "LTG AxKhan",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": true,
+                            "totalDamage": 304702,
+                            "experience": 20789,
+                            "totalGold": 19884,
+                            "items": [
+                                3042,
+                                6691,
+                                6694,
+                                6676,
+                                3158,
+                                3133,
+                                3363
+                            ],
+                            "spells": [
+                                4,
+                                7
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 1,
+                            "quadraKills": 1,
+                            "pentaKills": 0,
+                            "wardsKilled": 2,
+                            "wardsPlaced": 18,
+                            "largestKillingSpree": 5,
+                            "goldPerMinute": 538.32,
+                            "damagePerMinute": 8249.23,
+                            "experiencePerMinute": 562.82,
+                            "killSharing": 27.66,
+                            "damageSharing": 31.77,
+                            "killParticipation": 46.81
+                        },
+                        {
+                            "kills": 4,
+                            "deaths": 8,
+                            "assists": 22,
+                            "kda": 3.25,
+                            "championName": "Thresh",
+                            "championLevel": 16,
+                            "summonerName": "Get Hitchslapped",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": true,
+                            "totalDamage": 28861,
+                            "experience": 16022,
+                            "totalGold": 11419,
+                            "items": [
+                                3857,
+                                3107,
+                                3190,
+                                3111,
+                                3050,
+                                0,
+                                3364
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 7,
+                            "wardsPlaced": 29,
+                            "largestKillingSpree": 2,
+                            "goldPerMinute": 309.15,
+                            "damagePerMinute": 781.36,
+                            "experiencePerMinute": 433.77,
+                            "killSharing": 8.51,
+                            "damageSharing": 3.01,
+                            "killParticipation": 55.32
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 154,
+                            "pickTurn": 1
+                        },
+                        {
+                            "championId": 121,
+                            "pickTurn": 2
+                        },
+                        {
+                            "championId": 141,
+                            "pickTurn": 3
+                        },
+                        {
+                            "championId": 83,
+                            "pickTurn": 4
+                        },
+                        {
+                            "championId": 234,
+                            "pickTurn": 5
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": true,
+                            "kills": 2
+                        },
+                        "champion": {
+                            "first": false,
+                            "kills": 47
+                        },
+                        "dragon": {
+                            "first": true,
+                            "kills": 3
+                        },
+                        "inhibitor": {
+                            "first": true,
+                            "kills": 1
+                        },
+                        "riftHerald": {
+                            "first": false,
+                            "kills": 1
+                        },
+                        "tower": {
+                            "first": true,
+                            "kills": 9
+                        }
+                    },
+                    "teamId": "Blue",
+                    "win": false
+                },
+                {
+                    "players": [
+                        {
+                            "kills": 2,
+                            "deaths": 11,
+                            "assists": 18,
+                            "kda": 1.82,
+                            "championName": "Garen",
+                            "championLevel": 17,
+                            "summonerName": "SoloR",
+                            "role": "SOLO",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 125298,
+                            "experience": 17121,
+                            "totalGold": 11471,
+                            "items": [
+                                3123,
+                                3140,
+                                6631,
+                                3071,
+                                3111,
+                                3066,
+                                3340
+                            ],
+                            "spells": [
+                                4,
+                                12
+                            ],
+                            "doubleKills": 0,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 4,
+                            "wardsPlaced": 11,
+                            "largestKillingSpree": 0,
+                            "goldPerMinute": 310.56,
+                            "damagePerMinute": 3392.21,
+                            "experiencePerMinute": 463.52,
+                            "killSharing": 5.26,
+                            "damageSharing": 16.18,
+                            "killParticipation": 52.63
+                        },
+                        {
+                            "kills": 10,
+                            "deaths": 12,
+                            "assists": 18,
+                            "kda": 2.33,
+                            "championName": "Diana",
+                            "championLevel": 17,
+                            "summonerName": "JFrosk",
+                            "role": "NONE",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 217576,
+                            "experience": 17871,
+                            "totalGold": 15617,
+                            "items": [
+                                3140,
+                                3115,
+                                3165,
+                                3100,
+                                4636,
+                                3158,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                11
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 10,
+                            "wardsPlaced": 3,
+                            "largestKillingSpree": 3,
+                            "goldPerMinute": 422.8,
+                            "damagePerMinute": 5890.46,
+                            "experiencePerMinute": 483.82,
+                            "killSharing": 26.32,
+                            "damageSharing": 28.1,
+                            "killParticipation": 73.68
+                        },
+                        {
+                            "kills": 12,
+                            "deaths": 8,
+                            "assists": 13,
+                            "kda": 3.13,
+                            "championName": "Gwen",
+                            "championLevel": 18,
+                            "summonerName": "Zenon",
+                            "role": "SOLO",
+                            "firstBloodParticipation": true,
+                            "firstBloodTower": false,
+                            "totalDamage": 148644,
+                            "experience": 18592,
+                            "totalGold": 16402,
+                            "items": [
+                                3165,
+                                3157,
+                                3158,
+                                4633,
+                                3115,
+                                1058,
+                                3363
+                            ],
+                            "spells": [
+                                14,
+                                4
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 1,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 3,
+                            "wardsPlaced": 12,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 444.05,
+                            "damagePerMinute": 4024.25,
+                            "experiencePerMinute": 503.34,
+                            "killSharing": 31.58,
+                            "damageSharing": 19.19,
+                            "killParticipation": 65.79
+                        },
+                        {
+                            "kills": 7,
+                            "deaths": 6,
+                            "assists": 8,
+                            "kda": 2.5,
+                            "championName": "Samira",
+                            "championLevel": 17,
+                            "summonerName": "CrossOverVTG",
+                            "role": "CARRY",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 203708,
+                            "experience": 18000,
+                            "totalGold": 14659,
+                            "items": [
+                                3033,
+                                2420,
+                                3047,
+                                6676,
+                                6673,
+                                3036,
+                                3363
+                            ],
+                            "spells": [
+                                7,
+                                4
+                            ],
+                            "doubleKills": 2,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 5,
+                            "wardsPlaced": 7,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 396.86,
+                            "damagePerMinute": 5515.01,
+                            "experiencePerMinute": 487.32,
+                            "killSharing": 18.42,
+                            "damageSharing": 26.31,
+                            "killParticipation": 39.47
+                        },
+                        {
+                            "kills": 7,
+                            "deaths": 10,
+                            "assists": 22,
+                            "kda": 2.9,
+                            "championName": "Senna",
+                            "championLevel": 16,
+                            "summonerName": "xgigaxdante",
+                            "role": "SUPPORT",
+                            "firstBloodParticipation": false,
+                            "firstBloodTower": false,
+                            "totalDamage": 79164,
+                            "experience": 15122,
+                            "totalGold": 12569,
+                            "items": [
+                                3864,
+                                6672,
+                                3124,
+                                3009,
+                                3094,
+                                3044,
+                                3364
+                            ],
+                            "spells": [
+                                4,
+                                7
+                            ],
+                            "doubleKills": 1,
+                            "tripleKills": 0,
+                            "quadraKills": 0,
+                            "pentaKills": 0,
+                            "wardsKilled": 12,
+                            "wardsPlaced": 35,
+                            "largestKillingSpree": 4,
+                            "goldPerMinute": 340.28,
+                            "damagePerMinute": 2143.21,
+                            "experiencePerMinute": 409.4,
+                            "killSharing": 18.42,
+                            "damageSharing": 10.22,
+                            "killParticipation": 76.32
+                        }
+                    ],
+                    "bans": [
+                        {
+                            "championId": 25,
+                            "pickTurn": 6
+                        },
+                        {
+                            "championId": 122,
+                            "pickTurn": 7
+                        },
+                        {
+                            "championId": 54,
+                            "pickTurn": 8
+                        },
+                        {
+                            "championId": 777,
+                            "pickTurn": 9
+                        },
+                        {
+                            "championId": 77,
+                            "pickTurn": 10
+                        }
+                    ],
+                    "objectives": {
+                        "baron": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "champion": {
+                            "first": true,
+                            "kills": 38
+                        },
+                        "dragon": {
+                            "first": false,
+                            "kills": 2
+                        },
+                        "inhibitor": {
+                            "first": false,
+                            "kills": 0
+                        },
+                        "riftHerald": {
+                            "first": true,
+                            "kills": 1
+                        },
+                        "tower": {
+                            "first": false,
+                            "kills": 5
+                        }
+                    },
+                    "teamId": "Red",
+                    "win": false
+                }
+            ],
+            "gameInformation": {
+                "gameDuration": 2216222,
+                "winner": "Red"
+            }
+        }
+    ],
+    "leagueInfo": [
+        {
+            "tittle": "SoloQ",
+            "league": "GOLD II",
+            "lp": 24,
+            "wins": 70,
+            "losses": 76,
+            "winRate": 47.95
+        },
+        {
+            "tittle": "FlexQ",
+            "league": "PLATINUM IV",
+            "lp": 43,
+            "wins": 75,
+            "losses": 78,
+            "winRate": 49.02
+        }
+    ]
+}
